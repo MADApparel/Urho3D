@@ -23,6 +23,7 @@
 # Define target name
 set (TARGET_NAME LibCpuId)
 
+# Define preprocessor macros
 if (HAVE_STDINT_H)
     add_definitions (-DHAVE_STDINT_H)
 endif ()

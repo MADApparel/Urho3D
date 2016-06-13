@@ -399,11 +399,6 @@ if (URHO3D_D3D11)
     set (URHO3D_OPENGL 0)
 endif ()
 
-# Add definitions for GLEW
-if (NOT ANDROID AND NOT ARM AND NOT WEB AND URHO3D_OPENGL)
-    add_definitions (-DGLEW_STATIC -DGLEW_NO_GLU)
-endif ()
-
 # Default library type is STATIC
 if (URHO3D_LIB_TYPE)
     string (TOUPPER ${URHO3D_LIB_TYPE} URHO3D_LIB_TYPE)

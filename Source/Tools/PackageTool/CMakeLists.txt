@@ -80,7 +80,7 @@ if (NOT CMAKE_PROJECT_NAME STREQUAL Urho3D)
         ${BAKED_CMAKE_SOURCE_DIR}/Source/Urho3D/Math/Vector4.cpp
     )
 
-    # Define that we are building mini Urho
+    # Define preprocessor macros
     add_definitions (-DMINI_URHO)
 
     # Setup SDK-like include dir in the build tree for building the mini-urho
