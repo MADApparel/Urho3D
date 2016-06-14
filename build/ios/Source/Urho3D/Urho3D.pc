@@ -32,7 +32,7 @@ CFLAGS_RELWITHDEBINFO=-O2 -g -DNDEBUG
 
 Name: Urho3D
 Description: Urho3D is a free lightweight, cross-platform 2D and 3D game engine implemented in C++ and released under the MIT license. Greatly inspired by OGRE (http://www.ogre3d.org) and Horde3D (http://www.horde3d.org).
-Version: 1.5.954
+Version: 1.5.955
 URL: https://github.com/urho3d/Urho3D
 Libs:  -framework AudioToolbox -framework CoreAudio -framework CoreGraphics -framework CoreMotion -framework Foundation -framework GameController -framework OpenGLES -framework QuartzCore -framework UIKit  -L"${libdir}" -lUrho3D -liconv
 Cflags: -DURHO3D_FILEWATCHER -DURHO3D_PROFILING -DURHO3D_LOGGING -DURHO3D_THREADING -DURHO3D_STATIC_DEFINE -DURHO3D_ANGELSCRIPT -DURHO3D_LUA -DTOLUA_RELEASE -DURHO3D_NAVIGATION -DURHO3D_NETWORK -DURHO3D_PHYSICS -DURHO3D_URHO2D -DURHO3D_CXX11 -DIOS -std=c++11 -Wno-invalid-offsetof  -I"${includedir}" -I"${includedir}/Urho3D/ThirdParty" -I"${includedir}/Urho3D/ThirdParty/Bullet" -I"${includedir}/Urho3D/ThirdParty/Lua"
