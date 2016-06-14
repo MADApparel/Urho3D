@@ -1,0 +1,1 @@
+cmd='/usr/bin/env;-i;PATH=/usr/bin:/bin:/usr/sbin:/sbin;/Applications/CMake.app/Contents/bin/cmake;-DDEST_RUNTIME_DIR=/Users/nick/Dev/AthosApp/urho3d/build/ios/bin/tool;-DBAKED_CMAKE_SOURCE_DIR=/Users/nick/Dev/AthosApp/urho3d;-DURHO3D_UPDATE_SOURCE_TREE=OFF;-GXcode;/Users/nick/Dev/AthosApp/urho3d/Source/ThirdParty/toluapp/src/bin'

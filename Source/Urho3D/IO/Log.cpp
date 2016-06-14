@@ -37,7 +37,7 @@
 #include <android/log.h>
 #endif
 #ifdef IOS
-extern "C" void SDL_IOS_LogMessage(const char* message);
+void SDL_IOS_LogMessage(const char* message);
 #endif
 
 #include "../DebugNew.h"

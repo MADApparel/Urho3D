@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BEA4B7F2218F4BEB9672E2969A2BE5405B6FEDF9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BEA4B7F2218F4BEB9672E2969A2BE5405B6FEDF9" : 0,
+    "773D80765588C43149C7685F90BC24CC44B812EF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B18BBD18-96B8-476E-9161-6635D9942C43",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BEA4B7F2218F4BEB9672E2969A2BE5405B6FEDF9" : "urho3d\/",
+    "773D80765588C43149C7685F90BC24CC44B812EF" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Urho3D",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "build\/osx\/Urho3D.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MADApparel\/AthosApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "773D80765588C43149C7685F90BC24CC44B812EF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MADApparel\/Urho3D",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BEA4B7F2218F4BEB9672E2969A2BE5405B6FEDF9"
+    }
+  ]
+}

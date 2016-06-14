@@ -1,0 +1,1 @@
+/Users/nick/Dev/AthosApp/urho3d/Source/ThirdParty/STB/./stb_image_write.h

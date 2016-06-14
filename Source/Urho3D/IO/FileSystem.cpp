@@ -73,10 +73,16 @@ const char* SDL_Android_GetFilesDir();
 char** SDL_Android_GetFileList(const char* path, int* count);
 void SDL_Android_FreeFileList(char*** array, int* count);
 #elif IOS
-const char* SDL_IOS_GetResourceDir();
-const char* SDL_IOS_GetDocumentsDir();
+// ATHOS
+//const char* SDL_IOS_GetResourceDir();
+//const char* SDL_IOS_GetDocumentsDir();
 #endif
 }
+
+#ifdef IOS
+extern const char* SDL_IOS_GetResourceDir();
+extern const char* SDL_IOS_GetDocumentsDir();
+#endif
 
 #include "../DebugNew.h"
 
