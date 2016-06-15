@@ -51,6 +51,8 @@ public:
     void SetBoundingBox(const BoundingBox& box);
     /// Set ambient color
     void SetAmbientColor(const Color& color);
+    /// Set alpha value of fog
+    void SetFogAlpha(float alpha);
     /// Set fog color.
     void SetFogColor(const Color& color);
     /// Set fog start distance.

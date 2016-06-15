@@ -9,21 +9,21 @@
 /* Begin PBXAggregateTarget section */
 		5CF57D6C99E1415A9243281C /* package */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 58A5D71A4A99497583D8A5AE /* Build configuration list for PBXAggregateTarget "package" */;
+			buildConfigurationList = EC326F7A94CA4D1590768837 /* Build configuration list for PBXAggregateTarget "package" */;
 			buildPhases = (
-				1FB3480171D241CE83EFF050 /* CMake PostBuild Rules */,
+				0A9D94A2E0304407B92D4AC8 /* CMake PostBuild Rules */,
 			);
 			dependencies = (
-				85E51C464F90437CBF224CFF /* PBXTargetDependency */,
+				093C44E51B5C4C31B92C8B9E /* PBXTargetDependency */,
 			);
 			name = package;
 			productName = package;
 		};
 		9BC15BF3A0A64B03935B8780 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 0B461849934247909DB87399 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 5F051C3CD1DE415094B32475 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
-				5D94D41C73334E03B1D5CF08 /* CMake Rules */,
+				7F74CB8BBAEB4912A27A2722 /* CMake Rules */,
 			);
 			dependencies = (
 			);
@@ -32,24 +32,24 @@
 		};
 		AD602B6AD78142AD9777DAFC /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = F6BD96FE95674F38AB600133 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = E2881EAE6DCE41BF8E9B21F6 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				9FC1FF9FA04C4323BA004AE6 /* CMake Rules */,
+				8DC8571DACAF45ADB6D27BA1 /* CMake Rules */,
 			);
 			dependencies = (
-				4DA2210B8D4E43D9A8B847FC /* PBXTargetDependency */,
+				F7DDC740F6F74951A4BD112A /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
 		FC4C8878053947948AB8AD51 /* install */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 308B888AE7104E91BFECC72A /* Build configuration list for PBXAggregateTarget "install" */;
+			buildConfigurationList = D050B25F1ED34F90AF2DF7E2 /* Build configuration list for PBXAggregateTarget "install" */;
 			buildPhases = (
-				95E7F5F452F04F909B9E2EF4 /* CMake PostBuild Rules */,
+				D205FC54A4464715A9A960FC /* CMake PostBuild Rules */,
 			);
 			dependencies = (
-				FFEBB733645B4BAC8A37EC7E /* PBXTargetDependency */,
+				00A6119796AA465784A85E6B /* PBXTargetDependency */,
 			);
 			name = install;
 			productName = install;
@@ -57,24 +57,24 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildStyle section */
-		57F74131C38D4ACBA3915D55 = {
-			isa = PBXBuildStyle;
-		};
-		61A15707AC554BE3B389D4C6 /* Debug */ = {
+		0DE0DA8F58E746619ACA63C6 /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Debug;
 		};
-		6E55E5DCC60947E8AB5C6E72 /* Release */ = {
+		80597E29527A4ED692DF4681 = {
+			isa = PBXBuildStyle;
+		};
+		A2329D5BC36D43BB8A70EC69 /* Release */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Release;
 		};
-		DF0BA635B49442DFA229C0C7 /* RelWithDebInfo */ = {
+		F8420993C47148D185A8E4C4 /* RelWithDebInfo */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -84,97 +84,97 @@
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		4591F789FE654F768FDE3FF7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1F1D8610E64378BA6E7EA3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD602B6AD78142AD9777DAFC;
-			remoteInfo = ALL_BUILD;
-		};
-		83278E6D81D148B591A23C72 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1F1D8610E64378BA6E7EA3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD602B6AD78142AD9777DAFC;
-			remoteInfo = ALL_BUILD;
-		};
-		F35B85748A1F4D6A85120DB7 /* PBXContainerItemProxy */ = {
+		6094F3F17244491AB4FA5CAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA1F1D8610E64378BA6E7EA3 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9BC15BF3A0A64B03935B8780;
 			remoteInfo = ZERO_CHECK;
 		};
+		94383C90B6CA4B04A81D180E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA1F1D8610E64378BA6E7EA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD602B6AD78142AD9777DAFC;
+			remoteInfo = ALL_BUILD;
+		};
+		BCAB408489294BE5B3E29DD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA1F1D8610E64378BA6E7EA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD602B6AD78142AD9777DAFC;
+			remoteInfo = ALL_BUILD;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B1AF030881474741A3E84FA1 /* /Users/nick/Dev/AthosApp/urho3d/Docs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		DD88990911EE429BAEABCC5A /* /Users/nick/Dev/AthosApp/urho3d/Docs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0CBC46C9F1C14B6D980A4B17 /* /Users/nick/Dev/AthosApp/urho3d/Docs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DDDD101CEB3346D3B1A20901 /* /Users/nick/Dev/AthosApp/urho3d/Docs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		03AF225D8B244B8794DFA39A = {
-			isa = PBXGroup;
-			children = (
-				63F437743CC04103B502C26C /* Sources */,
-				4D7B4981EEF74C4188D66E5B /* Resources */,
-				4A793DA198D040EA87C2D58C /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		4A793DA198D040EA87C2D58C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4D7B4981EEF74C4188D66E5B /* Resources */ = {
+		0566531D818E4B75BB8622F8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		63F437743CC04103B502C26C /* Sources */ = {
+		290C399E10604F0AB195A4B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC4C5738DEFD449AAA5B4D5F /* ALL_BUILD */,
-				9B34B79C915A46F3B839B699 /* ZERO_CHECK */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		390CB6F49ADD4D2491332675 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		7BFC6D92ECBD41F9A41D4DA8 = {
+			isa = PBXGroup;
+			children = (
+				8F3CBEB851F242FE97A2DD19 /* Sources */,
+				0566531D818E4B75BB8622F8 /* Resources */,
+				290C399E10604F0AB195A4B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F3CBEB851F242FE97A2DD19 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C912124677204B27AD9E5618 /* ALL_BUILD */,
+				A9D84D797BBE4AEDAA5AB7EE /* ZERO_CHECK */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
 		};
-		9A88F869DC5743FB923799A2 /* CMake Rules */ = {
+		A9D84D797BBE4AEDAA5AB7EE /* ZERO_CHECK */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		9B34B79C915A46F3B839B699 /* ZERO_CHECK */ = {
-			isa = PBXGroup;
-			children = (
-				9A88F869DC5743FB923799A2 /* CMake Rules */,
-				DD88990911EE429BAEABCC5A /* /Users/nick/Dev/AthosApp/urho3d/Docs/CMakeLists.txt */,
+				EFE3FC23FE3447FB962F1F1E /* CMake Rules */,
+				DDDD101CEB3346D3B1A20901 /* /Users/nick/Dev/AthosApp/urho3d/Docs/CMakeLists.txt */,
 			);
 			name = ZERO_CHECK;
 			sourceTree = "<group>";
 		};
-		E2FDE40B94A34405A0D48664 /* CMake Rules */ = {
+		C912124677204B27AD9E5618 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				390CB6F49ADD4D2491332675 /* CMake Rules */,
+				0CBC46C9F1C14B6D980A4B17 /* /Users/nick/Dev/AthosApp/urho3d/Docs/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		EFE3FC23FE3447FB962F1F1E /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		FC4C5738DEFD449AAA5B4D5F /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				E2FDE40B94A34405A0D48664 /* CMake Rules */,
-				B1AF030881474741A3E84FA1 /* /Users/nick/Dev/AthosApp/urho3d/Docs/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,17 +186,17 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 0730;
 			};
-			buildConfigurationList = 157C4BBC138F41DD9D61C991 /* Build configuration list for PBXProject "Urho3D-Docs" */;
+			buildConfigurationList = 653A04CA8123468BB9E84379 /* Build configuration list for PBXProject "Urho3D-Docs" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				6E55E5DCC60947E8AB5C6E72 /* Release */,
-				DF0BA635B49442DFA229C0C7 /* RelWithDebInfo */,
-				61A15707AC554BE3B389D4C6 /* Debug */,
+				A2329D5BC36D43BB8A70EC69 /* Release */,
+				F8420993C47148D185A8E4C4 /* RelWithDebInfo */,
+				0DE0DA8F58E746619ACA63C6 /* Debug */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 03AF225D8B244B8794DFA39A;
+			mainGroup = 7BFC6D92ECBD41F9A41D4DA8;
 			projectDirPath = ../../../Docs;
 			projectRoot = "";
 			targets = (
@@ -209,22 +209,7 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		09951E6B54564D2CBFCE7677 = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
-		1FB3480171D241CE83EFF050 /* CMake PostBuild Rules */ = {
+		0A9D94A2E0304407B92D4AC8 /* CMake PostBuild Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -235,7 +220,7 @@ exit 0";
 			shellScript = "make -C /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs -f /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
-		5B049BB3DD8F4A61AA13055B = {
+		4DDE6EE50D5042FF81FC17F7 = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -250,7 +235,22 @@ exit 0";
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		5D94D41C73334E03B1D5CF08 /* CMake Rules */ = {
+		5D2D36E8F0F8463FA6035D62 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		7F74CB8BBAEB4912A27A2722 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,18 +261,7 @@ exit 0";
 			shellScript = "make -C /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs -f /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
-		95E7F5F452F04F909B9E2EF4 /* CMake PostBuild Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake PostBuild Rules";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs -f /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
-			showEnvVarsInLog = 0;
-		};
-		9FC1FF9FA04C4323BA004AE6 /* CMake Rules */ = {
+		8DC8571DACAF45ADB6D27BA1 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,7 +272,7 @@ exit 0";
 			shellScript = "make -C /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs -f /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
-		A33605FC84DA44C08723615C = {
+		9290ED9B68314D8EB29D8D03 = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -298,7 +287,7 @@ exit 0";
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		C86E909041444F8E8CCBBD76 = {
+		98A7A4AF6EE747B99E4F2D5E = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,146 +300,41 @@ exit 0";
 			shellPath = /bin/sh;
 			shellScript = "# shell script goes here
 exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D205FC54A4464715A9A960FC /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs -f /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4DA2210B8D4E43D9A8B847FC /* PBXTargetDependency */ = {
+		00A6119796AA465784A85E6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD602B6AD78142AD9777DAFC /* ALL_BUILD */;
+			targetProxy = 94383C90B6CA4B04A81D180E /* PBXContainerItemProxy */;
+		};
+		093C44E51B5C4C31B92C8B9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD602B6AD78142AD9777DAFC /* ALL_BUILD */;
+			targetProxy = BCAB408489294BE5B3E29DD6 /* PBXContainerItemProxy */;
+		};
+		F7DDC740F6F74951A4BD112A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9BC15BF3A0A64B03935B8780 /* ZERO_CHECK */;
-			targetProxy = F35B85748A1F4D6A85120DB7 /* PBXContainerItemProxy */;
-		};
-		85E51C464F90437CBF224CFF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AD602B6AD78142AD9777DAFC /* ALL_BUILD */;
-			targetProxy = 83278E6D81D148B591A23C72 /* PBXContainerItemProxy */;
-		};
-		FFEBB733645B4BAC8A37EC7E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AD602B6AD78142AD9777DAFC /* ALL_BUILD */;
-			targetProxy = 4591F789FE654F768FDE3FF7 /* PBXContainerItemProxy */;
+			targetProxy = 6094F3F17244491AB4FA5CAC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1DBB2653A90643F18C9C6153 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		22A9BE9483214FD1BFAF9F1B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		314B956AD86143ED9D78DBFA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				SDKROOT = macosx;
-				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs/build;
-			};
-			name = Release;
-		};
-		368786DFECDF4337B83AF572 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = package;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		42D2AE833753454F8A8F0EAB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		46A73C3DE7654D36BEFCFF48 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		588BD76DD10249D493FFCEF7 /* RelWithDebInfo */ = {
+		00D6A364C388428FB48B0D1E /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
@@ -472,7 +356,17 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		60700DC0118C4867B9808BB5 /* Release */ = {
+		25FD6F50AF9F416198CD4C8C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs/build;
+			};
+			name = RelWithDebInfo;
+		};
+		314E8D475F704C76B039C437 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -485,90 +379,6 @@ exit 0";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		8AC09A24B94A4013B3D6F525 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = package;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		9F3EC00511964B9DA00BE494 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		A3B5836D919443C4B0ACC356 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = package;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		AAA88745817845E89AF4F6C5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
 				USE_HEADERMAP = NO;
@@ -576,7 +386,103 @@ exit 0";
 			};
 			name = Debug;
 		};
-		AE045F2D526D4DF885F7156B /* RelWithDebInfo */ = {
+		52706C30534846369D906FBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5BF24BE6EAFC4FB9AA029C52 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7D65F7960DC247D699836E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		7E81508E53D443EDA3C08822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		983E1F52F2844678AD4265D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs/build;
+			};
+			name = Debug;
+		};
+		9AAC8C7372A94FF696614941 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -596,7 +502,91 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		B4B68E4D8C354FF38C3D3C85 /* RelWithDebInfo */ = {
+		9CF2A663260E43CBABCB71CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		E1E7204376CC4CBBBB884C4B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E6A7DED877CC45B4BF5EEE96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F3B8CA46944045968F160812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		F4C716EA49D14690B705C902 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
@@ -604,67 +594,77 @@ exit 0";
 				SDKROOT = macosx;
 				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs/build;
 			};
-			name = RelWithDebInfo;
+			name = Release;
 		};
-		C438BBF7B9A24248A4E55318 /* Debug */ = {
+		FDCBDDBF3EEA489AA8C23B2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				SDKROOT = macosx;
-				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs/build;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/osx/Docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B461849934247909DB87399 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		5F051C3CD1DE415094B32475 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22A9BE9483214FD1BFAF9F1B /* Release */,
-				AE045F2D526D4DF885F7156B /* RelWithDebInfo */,
-				AAA88745817845E89AF4F6C5 /* Debug */,
+				7D65F7960DC247D699836E2D /* Release */,
+				9AAC8C7372A94FF696614941 /* RelWithDebInfo */,
+				FDCBDDBF3EEA489AA8C23B2D /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		157C4BBC138F41DD9D61C991 /* Build configuration list for PBXProject "Urho3D-Docs" */ = {
+		653A04CA8123468BB9E84379 /* Build configuration list for PBXProject "Urho3D-Docs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				314B956AD86143ED9D78DBFA /* Release */,
-				B4B68E4D8C354FF38C3D3C85 /* RelWithDebInfo */,
-				C438BBF7B9A24248A4E55318 /* Debug */,
+				F4C716EA49D14690B705C902 /* Release */,
+				25FD6F50AF9F416198CD4C8C /* RelWithDebInfo */,
+				983E1F52F2844678AD4265D2 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		308B888AE7104E91BFECC72A /* Build configuration list for PBXAggregateTarget "install" */ = {
+		D050B25F1ED34F90AF2DF7E2 /* Build configuration list for PBXAggregateTarget "install" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				42D2AE833753454F8A8F0EAB /* Release */,
-				588BD76DD10249D493FFCEF7 /* RelWithDebInfo */,
-				1DBB2653A90643F18C9C6153 /* Debug */,
+				9CF2A663260E43CBABCB71CA /* Release */,
+				00D6A364C388428FB48B0D1E /* RelWithDebInfo */,
+				F3B8CA46944045968F160812 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58A5D71A4A99497583D8A5AE /* Build configuration list for PBXAggregateTarget "package" */ = {
+		E2881EAE6DCE41BF8E9B21F6 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8AC09A24B94A4013B3D6F525 /* Release */,
-				A3B5836D919443C4B0ACC356 /* RelWithDebInfo */,
-				368786DFECDF4337B83AF572 /* Debug */,
+				E6A7DED877CC45B4BF5EEE96 /* Release */,
+				E1E7204376CC4CBBBB884C4B /* RelWithDebInfo */,
+				314E8D475F704C76B039C437 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F6BD96FE95674F38AB600133 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		EC326F7A94CA4D1590768837 /* Build configuration list for PBXAggregateTarget "package" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				60700DC0118C4867B9808BB5 /* Release */,
-				9F3EC00511964B9DA00BE494 /* RelWithDebInfo */,
-				46A73C3DE7654D36BEFCFF48 /* Debug */,
+				7E81508E53D443EDA3C08822 /* Release */,
+				5BF24BE6EAFC4FB9AA029C52 /* RelWithDebInfo */,
+				52706C30534846369D906FBF /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

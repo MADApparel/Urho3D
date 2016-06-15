@@ -2690,6 +2690,7 @@
 		00D97571DD624E3DA7D79188 /* SDL_windowevents.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = SDL_windowevents.c; path = Source/ThirdParty/SDL/src/events/SDL_windowevents.c; sourceTree = SOURCE_ROOT; };
 		012EE59B12DC4CBB8026A52B /* btSphereTriangleCollisionAlgorithm.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = btSphereTriangleCollisionAlgorithm.h; path = Source/ThirdParty/Bullet/src/BulletCollision/CollisionDispatch/btSphereTriangleCollisionAlgorithm.h; sourceTree = SOURCE_ROOT; };
 		01323C7EF5624BB0889315F3 /* ScriptFile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ScriptFile.cpp; path = Source/Urho3D/AngelScript/ScriptFile.cpp; sourceTree = SOURCE_ROOT; };
+		01971C401D11C48E008CB3FB /* SDL_sysvideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDL_sysvideo.h; path = Source/ThirdParty/SDL/src/video/SDL_sysvideo.h; sourceTree = "<group>"; };
 		01AB6A3528674C9A8C9B3573 /* OGLGraphics.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OGLGraphics.cpp; path = Source/Urho3D/Graphics/OpenGL/OGLGraphics.cpp; sourceTree = SOURCE_ROOT; };
 		01AECEFD1D108B9700717D01 /* SDL_uikitappdelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SDL_uikitappdelegate.mm; path = Source/ThirdParty/SDL/src/video/uikit/SDL_uikitappdelegate.mm; sourceTree = "<group>"; };
 		0213BB0E5285412FB51CBDC3 /* b2CircleContact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2CircleContact.cpp; path = Source/ThirdParty/Box2D/Box2D/Dynamics/Contacts/b2CircleContact.cpp; sourceTree = SOURCE_ROOT; };
@@ -6101,6 +6102,7 @@
 				F713FB3EF9BC4C349CFB439F /* SDL_gamecontroller.c */,
 				63515D2963A941728E4D9A84 /* SDL_joystick.c */,
 				D3D7A8C00DE449E2B7DF1226 /* SDL_sysjoystick.m */,
+				01971C401D11C48E008CB3FB /* SDL_sysvideo.h */,
 				54312A4155ED4C3AB27C5D1E /* e_atan2.c */,
 				6B237A8132484A4EBBE59AE7 /* e_log.c */,
 				D8D8961023A44E5C94D5EAA6 /* e_pow.c */,

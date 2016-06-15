@@ -689,7 +689,8 @@ void Renderer::Render()
     // If no views, just clear the screen
     if (views_.Empty())
     {
-        graphics_->SetBlendMode(BLEND_REPLACE);
+        //graphics_->SetBlendMode(BLEND_REPLACE);
+        graphics_->SetBlendMode(BLEND_ALPHA);
         graphics_->SetColorWrite(true);
         graphics_->SetDepthWrite(true);
         graphics_->SetScissorTest(false);

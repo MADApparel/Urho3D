@@ -42,6 +42,9 @@
 
 #include <Foundation/Foundation.h>
 
+
+
+
 @implementation SDL_WindowData
 
 @synthesize uiwindow;
@@ -210,6 +213,8 @@ UIKit_CreateWindow(_THIS, SDL_Window *window)
         if (SetupWindowData(_this, window, uiwindow, SDL_TRUE) < 0) {
             return -1;
         }
+        
+        //uiwindow.backgroundColor = [UIColor colorWithRed:55.0f green:55.0f blue:55.0 alpha:0.05];
     }
 
     return 1;
@@ -279,6 +284,7 @@ UIKit_UpdateWindowBorder(_THIS, SDL_Window * window)
     [viewcontroller updateKeyboard];
 #endif
 
+    
     [viewcontroller.view setNeedsLayout];
     [viewcontroller.view layoutIfNeeded];
 }

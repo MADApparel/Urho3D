@@ -126,7 +126,13 @@ void Zone::SetFogColor(const Color& color)
     fogColor_ = Color(color, 1.0f);
     MarkNetworkUpdate();
 }
-
+    
+void Zone::SetFogAlpha(float alpha)
+{
+    fogColor_.a_=alpha;
+    MarkNetworkUpdate();
+}
+    
 void Zone::SetFogStart(float start)
 {
     if (start < 0.0f)
