@@ -20211,7 +20211,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DEFINES_MODULE = YES;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
 				HEADER_SEARCH_PATHS = $PROJECT_DIR;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -20219,6 +20219,7 @@
 				SDKROOT = iphoneos;
 				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/ios/build;
 				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR/build/ios/include;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Release;
 		};
@@ -26349,7 +26350,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DEFINES_MODULE = YES;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
 				HEADER_SEARCH_PATHS = $PROJECT_DIR;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -26357,6 +26358,7 @@
 				SDKROOT = iphoneos;
 				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/ios/build;
 				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR/build/ios/include;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = RelWithDebInfo;
 		};
@@ -27295,7 +27297,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DEFINES_MODULE = YES;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
 				HEADER_SEARCH_PATHS = $PROJECT_DIR;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -27304,6 +27306,7 @@
 				SDKROOT = iphoneos;
 				SYMROOT = /Users/nick/Dev/AthosApp/urho3d/build/ios/build;
 				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR/build/ios/include;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Debug;
 		};
