@@ -1,0 +1,3 @@
+[submodule "assetimp"]
+	path = assetimp
+	url = https://github.com/assimp/assimp
