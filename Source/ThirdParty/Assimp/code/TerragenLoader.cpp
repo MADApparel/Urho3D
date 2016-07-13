@@ -3,7 +3,7 @@
 Open Asset Import Library (assimp)
 ---------------------------------------------------------------------------
 
-Copyright (c) 2006-2015, assimp team
+Copyright (c) 2006-2016, assimp team
 
 All rights reserved.
 
@@ -44,12 +44,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 #ifndef ASSIMP_BUILD_NO_TERRAGEN_IMPORTER
+
 #include "TerragenLoader.h"
-#include "../include/assimp/Importer.hpp"
-#include "../include/assimp/IOSystem.hpp"
 #include "StreamReader.h"
-#include "../include/assimp/scene.h"
-#include "../include/assimp/DefaultLogger.hpp"
+#include <assimp/Importer.hpp>
+#include <assimp/IOSystem.hpp>
+#include <assimp/scene.h>
+#include <assimp/DefaultLogger.hpp>
 
 
 using namespace Assimp;
@@ -126,7 +127,7 @@ void TerragenImporter::InternReadFile( const std::string& pFile,
     if( file == NULL)
         throw DeadlyImportError( "Failed to open TERRAGEN TERRAIN file " + pFile + ".");
 
-    // Construct a stream reader to read all data in the correct endianess
+    // Construct a stream reader to read all data in the correct endianness
     StreamReaderLE reader(file);
     if(reader.GetRemainingSize() < 16)
         throw DeadlyImportError( "TER: file is too small" );

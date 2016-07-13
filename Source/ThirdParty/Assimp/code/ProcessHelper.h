@@ -2,7 +2,7 @@
 Open Asset Import Library (assimp)
 ----------------------------------------------------------------------
 
-Copyright (c) 2006-2015, assimp team
+Copyright (c) 2006-2016, assimp team
 All rights reserved.
 
 Redistribution and use of this software in source and binary forms,
@@ -41,12 +41,12 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef AI_PROCESS_HELPER_H_INCLUDED
 #define AI_PROCESS_HELPER_H_INCLUDED
 
-#include "../include/assimp/postprocess.h"
-#include "../include/assimp/anim.h"
-#include "../include/assimp/mesh.h"
-#include "../include/assimp/material.h"
-#include "../include/assimp/DefaultLogger.hpp"
-#include "../include/assimp/scene.h"
+#include <assimp/postprocess.h>
+#include <assimp/anim.h>
+#include <assimp/mesh.h>
+#include <assimp/material.h>
+#include <assimp/DefaultLogger.hpp>
+#include <assimp/scene.h>
 
 #include "SpatialSort.h"
 #include "BaseProcess.h"

@@ -38,8 +38,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ----------------------------------------------------------------------
 */
 
-// Modified by Lasse Oorni for Urho3D
-
 /** @file  IFCGeometry.cpp
  *  @brief Geometry conversion and synthesis for IFC
  */
@@ -53,7 +51,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "../contrib/poly2tri/poly2tri/poly2tri.h"
 #include "../contrib/clipper/clipper.hpp"
-#include <boost/make_shared.hpp>
+#include <memory>
 
 #include <iterator>
 
@@ -64,7 +62,7 @@ namespace Assimp {
 bool ProcessPolyloop(const IfcPolyLoop& loop, TempMesh& meshout, ConversionData& /*conv*/)
 {
     size_t cnt = 0;
-    BOOST_FOREACH(const IfcCartesianPoint& c, loop.Polygon) {
+    for(const IfcCartesianPoint& c : loop.Polygon) {
         IfcVector3 tmp;
         ConvertCartesianPoint(tmp,c);
 
@@ -172,7 +170,7 @@ void ProcessPolygonBoundaries(TempMesh& result, const TempMesh& inmesh, size_t m
         opening.extrusionDir = master_normal;
         opening.solid = NULL;
 
-        opening.profileMesh = boost::make_shared<TempMesh>();
+        opening.profileMesh = std::make_shared<TempMesh>();
         opening.profileMesh->verts.reserve(*iit);
         opening.profileMesh->vertcnt.push_back(*iit);
 
@@ -193,10 +191,10 @@ void ProcessPolygonBoundaries(TempMesh& result, const TempMesh& inmesh, size_t m
 // ------------------------------------------------------------------------------------------------
 void ProcessConnectedFaceSet(const IfcConnectedFaceSet& fset, TempMesh& result, ConversionData& conv)
 {
-    BOOST_FOREACH(const IfcFace& face, fset.CfsFaces) {
+    for(const IfcFace& face : fset.CfsFaces) {
         // size_t ob = -1, cnt = 0;
         TempMesh meshout;
-        BOOST_FOREACH(const IfcFaceBound& bound, face.Bounds) {
+        for(const IfcFaceBound& bound : face.Bounds) {
 
             if(const IfcPolyLoop* const polyloop = bound.Bound->ToPtr<IfcPolyLoop>()) {
                 if(ProcessPolyloop(*polyloop, meshout,conv)) {
@@ -221,7 +219,7 @@ void ProcessConnectedFaceSet(const IfcConnectedFaceSet& fset, TempMesh& result, 
 
             /*if(!IsTrue(bound.Orientation)) {
                 size_t c = 0;
-                BOOST_FOREACH(unsigned int& c, meshout.vertcnt) {
+                for(unsigned int& c : meshout.vertcnt) {
                     std::reverse(result.verts.begin() + cnt,result.verts.begin() + cnt + c);
                     cnt += c;
                 }
@@ -549,7 +547,7 @@ void ProcessExtrudedArea(const IfcExtrudedAreaSolid& solid, const TempMesh& curv
 
     IfcVector3 vmin, vmax;
     MinMaxChooser<IfcVector3>()(vmin, vmax);
-    BOOST_FOREACH(IfcVector3& v, in) {
+    for(IfcVector3& v : in) {
         v *= trafo;
 
         vmin = std::min(vmin, v);
@@ -561,8 +559,7 @@ void ProcessExtrudedArea(const IfcExtrudedAreaSolid& solid, const TempMesh& curv
     IfcVector3 dir = IfcMatrix3(trafo) * extrusionDir;
 
     // reverse profile polygon if it's winded in the wrong direction in relation to the extrusion direction
-    // Urho3D: modified to not use C++11
-    IfcVector3 profileNormal = TempMesh::ComputePolygonNormal(&in[0], in.size());
+    IfcVector3 profileNormal = TempMesh::ComputePolygonNormal(in.data(), in.size());
     if( profileNormal * dir < 0.0 )
         std::reverse(in.begin(), in.end());
 
@@ -582,7 +579,7 @@ void ProcessExtrudedArea(const IfcExtrudedAreaSolid& solid, const TempMesh& curv
         }
 
         nors.reserve(conv.apply_openings->size());
-        BOOST_FOREACH(TempOpening& t, *conv.apply_openings) {
+        for(TempOpening& t : *conv.apply_openings) {
             TempMesh& bounds = *t.profileMesh.get();
 
             if( bounds.verts.size() <= 2 ) {
@@ -620,7 +617,7 @@ void ProcessExtrudedArea(const IfcExtrudedAreaSolid& solid, const TempMesh& curv
     }
 
     if( openings ) {
-        BOOST_FOREACH(TempOpening& opening, *conv.apply_openings) {
+        for(TempOpening& opening : *conv.apply_openings) {
             if( !opening.wallPoints.empty() ) {
                 IFCImporter::LogError("failed to generate all window caps");
             }
@@ -663,10 +660,10 @@ void ProcessExtrudedArea(const IfcExtrudedAreaSolid& solid, const TempMesh& curv
     // it was created from. Return an empty mesh to the caller.
     if( collect_openings && !result.IsEmpty() ) {
         ai_assert(conv.collect_openings);
-        boost::shared_ptr<TempMesh> profile = boost::shared_ptr<TempMesh>(new TempMesh());
+        std::shared_ptr<TempMesh> profile = std::shared_ptr<TempMesh>(new TempMesh());
         profile->Swap(result);
 
-        boost::shared_ptr<TempMesh> profile2D = boost::shared_ptr<TempMesh>(new TempMesh());
+        std::shared_ptr<TempMesh> profile2D = std::shared_ptr<TempMesh>(new TempMesh());
         profile2D->verts.insert(profile2D->verts.end(), in.begin(), in.end());
         profile2D->vertcnt.push_back(in.size());
         conv.collect_openings->push_back(TempOpening(&solid, dir, profile, profile2D));
@@ -700,7 +697,7 @@ void ProcessExtrudedAreaSolid(const IfcExtrudedAreaSolid& solid, TempMesh& resul
             std::vector<TempOpening>* oldCollectOpenings = conv.collect_openings;
             conv.collect_openings = &fisherPriceMyFirstOpenings;
 
-            BOOST_FOREACH(const IfcCurve* curve, cprofile->InnerCurves) {
+            for(const IfcCurve* curve : cprofile->InnerCurves) {
                 TempMesh curveMesh, tempMesh;
                 ProcessCurve(*curve, curveMesh, conv);
                 ProcessExtrudedArea(solid, curveMesh, dir, tempMesh, conv, true);
@@ -735,9 +732,9 @@ bool ProcessGeometricItem(const IfcRepresentationItem& geo, unsigned int matid, 
     ConversionData& conv)
 {
     bool fix_orientation = false;
-    boost::shared_ptr< TempMesh > meshtmp = boost::make_shared<TempMesh>();
+    std::shared_ptr< TempMesh > meshtmp = std::make_shared<TempMesh>();
     if(const IfcShellBasedSurfaceModel* shellmod = geo.ToPtr<IfcShellBasedSurfaceModel>()) {
-        BOOST_FOREACH(boost::shared_ptr<const IfcShell> shell,shellmod->SbsmBoundary) {
+        for(std::shared_ptr<const IfcShell> shell :shellmod->SbsmBoundary) {
             try {
                 const EXPRESS::ENTITY& e = shell->To<ENTITY>();
                 const IfcConnectedFaceSet& fs = conv.db.MustGetObject(e).To<IfcConnectedFaceSet>();
@@ -765,7 +762,7 @@ bool ProcessGeometricItem(const IfcRepresentationItem& geo, unsigned int matid, 
         fix_orientation = true;
     }
     else if(const IfcFaceBasedSurfaceModel* surf = geo.ToPtr<IfcFaceBasedSurfaceModel>()) {
-        BOOST_FOREACH(const IfcConnectedFaceSet& fc, surf->FbsmFaces) {
+        for(const IfcConnectedFaceSet& fc : surf->FbsmFaces) {
             ProcessConnectedFaceSet(fc,*meshtmp.get(),conv);
         }
         fix_orientation = true;
@@ -794,7 +791,7 @@ bool ProcessGeometricItem(const IfcRepresentationItem& geo, unsigned int matid, 
             conv.collect_openings->push_back(TempOpening(geo.ToPtr<IfcSolidModel>(),
                 IfcVector3(0,0,0),
                 meshtmp,
-                boost::shared_ptr<TempMesh>()));
+                std::shared_ptr<TempMesh>()));
         }
         return true;
     }

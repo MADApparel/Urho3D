@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<material>
+	<technique name="Techniques/DiffSpec.xml" />
+	<texture unit="diffuse" name="Textures/skeleton5_fbx_atlas_0.png" />
+	<texture unit="specular" name="Textures/skeleton5_fbx_atlas_0.png" />
+	<parameter name="MatDiffColor" value="0.585883 0.585883 0.585883 1" />
+	<parameter name="MatSpecColor" value="1 1 1 1" />
+	<parameter name="MatEmissiveColor" value="0 0 0 1" />
+</material>

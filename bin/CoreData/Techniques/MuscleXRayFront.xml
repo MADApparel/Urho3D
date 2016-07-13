@@ -1,0 +1,3 @@
+<technique vs="MuscleXRay" ps="MuscleXRay" vsdefines="NOUV" >
+    <pass name="base" blend="alpha" alphatest="true" depthwrite="true"/>
+</technique>

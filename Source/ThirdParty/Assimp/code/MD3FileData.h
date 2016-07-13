@@ -2,7 +2,7 @@
 Open Asset Import Library (assimp)
 ----------------------------------------------------------------------
 
-Copyright (c) 2006-2015, assimp team
+Copyright (c) 2006-2016, assimp team
 All rights reserved.
 
 Redistribution and use of this software in source and binary forms,
@@ -38,8 +38,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ----------------------------------------------------------------------
 */
 
-// Modified by Lasse Oorni for Urho3D
-
 /** @file Md3FileData.h
  *
  *  @brief Defines helper data structures for importing MD3 files.
@@ -51,18 +49,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <string>
 #include <vector>
 #include <sstream>
-// Urho3D: VS2008 compatibility
-#if !defined(_MSC_VER) || (_MSC_VER >= 1600)
 #include <stdint.h>
-#else
-#include "../include/assimp/Compiler/pstdint.h"
-#endif
 
-#include "../include/assimp/types.h"
-#include "../include/assimp/mesh.h"
-#include "../include/assimp/anim.h"
+#include <assimp/types.h>
+#include <assimp/mesh.h>
+#include <assimp/anim.h>
 
-#include "./../include/assimp/Compiler/pushpack1.h"
+#include <assimp/Compiler/pushpack1.h>
 
 namespace Assimp    {
 namespace MD3   {
@@ -312,7 +305,7 @@ inline void Vec3NormalToLatLng( const aiVector3D& p_vIn, uint16_t& p_iOut )
         b &= 0xff;
 
         ((unsigned char*)&p_iOut)[0] = b;   // longitude
-        ((unsigned char*)&p_iOut)[1] = a;   // lattitude
+        ((unsigned char*)&p_iOut)[1] = a;   // latitude
     }
 }
 

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<material>
+	<technique name="Techniques/Diff.xml" />
+	<texture unit="diffuse" name="Textures/HandMusclesC1.jpg" />
+	<parameter name="MatDiffColor" value="0.484706 0 0.16 1" />
+	<parameter name="MatSpecColor" value="0.980392 0.980392 0.980392 4" />
+	<parameter name="MatEmissiveColor" value="0 0 0 1" />
+</material>

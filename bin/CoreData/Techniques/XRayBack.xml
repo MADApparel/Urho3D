@@ -1,0 +1,3 @@
+<technique vs="XRay" ps="XRay" vsdefines="NOUV" >
+    <pass name="alpha" blend="alpha" depthwrite="true" alphatest="false" psdefines="BACKFACING"/>
+</technique>

@@ -1,0 +1,4 @@
+<technique vs="MuscleXRay" ps="MuscleXRay" vsdefines="NOUV" >
+    <pass name="alpha" blend="alpha" depthwrite="false" alphatest="false" psdefines="BACKFACING"/>  
+</technique>
+ 

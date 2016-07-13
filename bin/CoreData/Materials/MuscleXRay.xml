@@ -1,0 +1,4 @@
+<material>
+    <cull value="ccw" />
+    <technique name="Techniques/MuscleXRayFront.xml" />
+</material> 
